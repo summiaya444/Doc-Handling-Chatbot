@@ -75,12 +75,6 @@ llm1=genai.GenerativeModel("gemini-pro-vision")
 with st.sidebar:
         st.title("MENU :")
 
-def read_pdf(file_path):
-    with open (os.path.join(file_path, "r")) as file:
-        text = ""
-        text += file.read() + "\n"
-    return text
-
 def extract_text_from_txt(file):
     text = file.read().decode('utf-8')
     return text
